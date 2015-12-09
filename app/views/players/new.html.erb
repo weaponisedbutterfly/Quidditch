@@ -1,0 +1,15 @@
+<%= form_for @player do |p| %>
+<%= p.label :name %>
+<%= p.text_field :name %>
+<br>
+<%= p.label :birthday %>
+<%= p.date_field :birthday %>
+<br>
+<%= p.label :broom %>
+<%= p.text_field :broom %>
+<br>
+<%= p.label :image %>
+<%= p.text_field :image %>
+<br>
+<%= p.submit 'Add new player' %>
+<% end %>

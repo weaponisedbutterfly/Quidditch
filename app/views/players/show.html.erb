@@ -1,0 +1,9 @@
+<h1> <%= @player.name %> </h1>
+<p> <%= @player.team.name %> </p>
+<%= image_tag(@player.image, alt:'No image', width: 200) %>
+<br><br>
+<b>Birthday: </b><br> <%= @player.birthday  %>
+<br><br>
+<b>Broom: </b><br><%= @player.broom %>
+<br><br>
+<%= link_to('Edit Player', edit_player_path(@player)) %>
